@@ -14,8 +14,8 @@
 		863651201F9ABD0F0021260F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8636511E1F9ABD0F0021260F /* LaunchScreen.storyboard */; };
 		8636512B1F9ABD470021260F /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8636512A1F9ABD470021260F /* SWRevealViewController.m */; };
 		8636512D1F9AC0A60021260F /* PrimeiraTelaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8636512C1F9AC0A60021260F /* PrimeiraTelaViewController.swift */; };
-		8636512F1F9AC0B40021260F /* SegundaTelaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8636512E1F9AC0B40021260F /* SegundaTelaViewController.swift */; };
-		863651311F9AC0C70021260F /* TerceiraTelaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863651301F9AC0C70021260F /* TerceiraTelaViewController.swift */; };
+		866FB4EB1FA3E1050063FEF1 /* DicasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866FB4EA1FA3E1050063FEF1 /* DicasViewController.swift */; };
+		866FB4F11FA3EBAA0063FEF1 /* Selections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866FB4F01FA3EBAA0063FEF1 /* Selections.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +30,8 @@
 		863651291F9ABD470021260F /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		8636512A1F9ABD470021260F /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		8636512C1F9AC0A60021260F /* PrimeiraTelaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeiraTelaViewController.swift; sourceTree = "<group>"; };
-		8636512E1F9AC0B40021260F /* SegundaTelaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegundaTelaViewController.swift; sourceTree = "<group>"; };
-		863651301F9AC0C70021260F /* TerceiraTelaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TerceiraTelaViewController.swift; sourceTree = "<group>"; };
+		866FB4EA1FA3E1050063FEF1 /* DicasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DicasViewController.swift; sourceTree = "<group>"; };
+		866FB4F01FA3EBAA0063FEF1 /* Selections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Selections.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +71,9 @@
 				8636511C1F9ABD0F0021260F /* Assets.xcassets */,
 				8636511E1F9ABD0F0021260F /* LaunchScreen.storyboard */,
 				863651211F9ABD0F0021260F /* Info.plist */,
+				866FB4EA1FA3E1050063FEF1 /* DicasViewController.swift */,
 				8636512C1F9AC0A60021260F /* PrimeiraTelaViewController.swift */,
-				8636512E1F9AC0B40021260F /* SegundaTelaViewController.swift */,
-				863651301F9AC0C70021260F /* TerceiraTelaViewController.swift */,
+				866FB4F01FA3EBAA0063FEF1 /* Selections.swift */,
 			);
 			path = SideBar;
 			sourceTree = "<group>";
@@ -163,8 +163,8 @@
 			files = (
 				863651181F9ABD0F0021260F /* ViewController.swift in Sources */,
 				863651161F9ABD0F0021260F /* AppDelegate.swift in Sources */,
-				863651311F9AC0C70021260F /* TerceiraTelaViewController.swift in Sources */,
-				8636512F1F9AC0B40021260F /* SegundaTelaViewController.swift in Sources */,
+				866FB4F11FA3EBAA0063FEF1 /* Selections.swift in Sources */,
+				866FB4EB1FA3E1050063FEF1 /* DicasViewController.swift in Sources */,
 				8636512D1F9AC0A60021260F /* PrimeiraTelaViewController.swift in Sources */,
 				8636512B1F9ABD470021260F /* SWRevealViewController.m in Sources */,
 			);
@@ -333,6 +333,7 @@
 				863651261F9ABD0F0021260F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -29,12 +29,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-63" y="123"/>
+            <point key="canvasLocation" x="876" y="122.78860569715144"/>
         </scene>
-        <!--Primeira-->
+        <!--Dicas-->
         <scene sceneID="QLx-Yw-8SZ">
             <objects>
-                <viewController id="tjE-4Q-PSu" customClass="PrimeiraTelaViewController" customModule="SideBar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tjE-4Q-PSu" customClass="DicasViewController" customModule="SideBar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MZG-Fe-6fD"/>
                         <viewControllerLayoutGuide type="bottom" id="YDP-6V-0dG"/>
@@ -42,18 +42,33 @@
                     <view key="view" contentMode="scaleToFill" id="kal-Jy-PHh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CuL-g9-JX6">
+                                <rect key="frame" x="16" y="72" width="343" height="407"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Severino está de manga comprida 
+Frederico tem barba 
+Everaldo está de sapato 
+Jeremias está de calça preta 
+Teobaldo está de bermuda
+ Severino não tem cabelo preto</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Primeira" id="6oY-rb-i7I">
+                    <navigationItem key="navigationItem" title="Dicas" id="6oY-rb-i7I">
                         <barButtonItem key="leftBarButtonItem" systemItem="bookmarks" id="9TB-HL-yjY"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="menuButton" destination="9TB-HL-yjY" id="aA9-vS-10b"/>
+                        <outlet property="menuButton" destination="9TB-HL-yjY" id="Hyb-wL-UEy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OrN-Bn-0vd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1812" y="122.78860569715144"/>
+            <point key="canvasLocation" x="3712.8000000000002" y="178.56071964017991"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="T6s-3e-dRp">
@@ -73,8 +88,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tela 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFn-S5-71p">
-                                                    <rect key="frame" x="8" y="12" width="44" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dicas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFn-S5-71p">
+                                                    <rect key="frame" x="8" y="12" width="43" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -86,44 +101,131 @@
                                             <segue destination="qc3-eg-hJK" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="iKB-Nu-lTY"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="L7Q-dh-vAd">
-                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="pDi-no-GNL" detailTextLabel="odD-bd-3D1" imageView="Sei-v0-Cuv" rowHeight="88" style="IBUITableViewCellStyleSubtitle" id="L7Q-dh-vAd">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="88"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="L7Q-dh-vAd" id="Rm4-tD-q48">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="87.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tela 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cP8-xM-6JO">
-                                                    <rect key="frame" x="8" y="12" width="46" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pDi-no-GNL">
+                                                    <rect key="frame" x="113" y="27" width="4.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="odD-bd-3D1">
+                                                    <rect key="frame" x="113" y="47.5" width="3.5" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="1_Teobaldo_face" id="Sei-v0-Cuv">
+                                                    <rect key="frame" x="15" y="0.0" width="83" height="87.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="Zee-eC-hIF" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="MmD-hT-sRg"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="37d-Sh-1A0">
-                                        <rect key="frame" x="0.0" y="88" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="0Ti-9J-lFb" imageView="air-ou-dcL" rowHeight="90" style="IBUITableViewCellStyleDefault" id="37d-Sh-1A0">
+                                        <rect key="frame" x="0.0" y="132" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="37d-Sh-1A0" id="MYf-xs-cP9">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tela 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlB-Ns-nUs">
-                                                    <rect key="frame" x="8" y="12" width="46" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0Ti-9J-lFb">
+                                                    <rect key="frame" x="118" y="0.0" width="242" height="89.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="2_Severino_face" id="air-ou-dcL">
+                                                    <rect key="frame" x="15" y="7" width="88" height="75"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="ZRj-xy-qAg" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="9Ue-iM-fiN"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="dWN-gZ-tHi" imageView="uNG-Hc-2lx" rowHeight="87" style="IBUITableViewCellStyleDefault" id="QQD-8f-pc4">
+                                        <rect key="frame" x="0.0" y="222" width="375" height="87"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QQD-8f-pc4" id="y7x-iR-rhq">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="86.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dWN-gZ-tHi">
+                                                    <rect key="frame" x="103" y="0.0" width="257" height="86.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="3_Everaldo_face" id="uNG-Hc-2lx">
+                                                    <rect key="frame" x="15" y="0.0" width="73" height="86.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="haj-1P-eYj" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="MbS-3q-8XB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="AVZ-VB-twJ" imageView="70F-I6-aj5" rowHeight="86" style="IBUITableViewCellStyleDefault" id="D1m-JJ-gcb">
+                                        <rect key="frame" x="0.0" y="309" width="375" height="86"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D1m-JJ-gcb" id="bQy-to-yvl">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="85.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AVZ-VB-twJ">
+                                                    <rect key="frame" x="108" y="0.0" width="252" height="85.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="4_Jeremias_face" id="70F-I6-aj5">
+                                                    <rect key="frame" x="15" y="0.0" width="78" height="85.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="HkA-sx-Ofm" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="oPZ-Zy-q2J"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="f0U-TA-liO" imageView="EZA-4g-bMB" rowHeight="92" style="IBUITableViewCellStyleDefault" id="GUj-en-iA7">
+                                        <rect key="frame" x="0.0" y="395" width="375" height="92"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GUj-en-iA7" id="Os9-G1-dSa">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="91.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f0U-TA-liO">
+                                                    <rect key="frame" x="111" y="0.0" width="249" height="91.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="5_Frederico_face" id="EZA-4g-bMB">
+                                                    <rect key="frame" x="15" y="7" width="81" height="76"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="9OR-Mj-MRw" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="SpG-hv-kP6"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -137,12 +239,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x93-f6-6Ah" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-63" y="911"/>
+            <point key="canvasLocation" x="876" y="909.89505247376314"/>
         </scene>
-        <!--Segunda-->
+        <!--Pessoa 1-->
         <scene sceneID="F20-bb-E8q">
             <objects>
-                <viewController id="U8i-ho-KiD" customClass="SegundaTelaViewController" customModule="SideBar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="U8i-ho-KiD" customClass="PrimeiraTelaViewController" customModule="SideBar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TE4-Ph-zr1"/>
                         <viewControllerLayoutGuide type="bottom" id="LtJ-Kj-pXe"/>
@@ -150,23 +252,82 @@
                     <view key="view" contentMode="scaleToFill" id="v9P-gE-onC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Teobaldo" translatesAutoresizingMaskIntoConstraints="NO" id="f2r-YW-hni">
+                                <rect key="frame" x="16" y="72" width="343" height="333"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="1ni-Qy-tta">
+                                <rect key="frame" x="16" y="424" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Não"/>
+                                    <segment title="Everaldo" enabled="NO"/>
+                                    <segment title="Sim"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedEveraldoAction:" destination="U8i-ho-KiD" eventType="valueChanged" id="E13-r7-mW4"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="506-TH-olZ">
+                                <rect key="frame" x="16" y="471" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Não"/>
+                                    <segment title="Frederico" enabled="NO"/>
+                                    <segment title="Sim"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="xSb-Y4-pTk">
+                                <rect key="frame" x="16" y="515" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Não"/>
+                                    <segment title="Jeremias" enabled="NO"/>
+                                    <segment title="Sim"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="wRs-46-29y">
+                                <rect key="frame" x="16" y="562" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Não"/>
+                                    <segment title="Severino" enabled="NO"/>
+                                    <segment title="Sim"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="fGE-3O-Igw">
+                                <rect key="frame" x="16" y="607" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Não"/>
+                                    <segment title="Teobaldo" enabled="NO"/>
+                                    <segment title="Sim"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98279667159999995" green="0.97388867379999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Segunda" id="QGJ-gt-Gjy">
+                    <navigationItem key="navigationItem" title="Pessoa 1" id="QGJ-gt-Gjy">
                         <barButtonItem key="leftBarButtonItem" systemItem="bookmarks" id="xWV-lX-M3J"/>
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="xWV-lX-M3J" id="JjH-8V-L5p"/>
+                        <outlet property="segmentedEveraldo" destination="1ni-Qy-tta" id="LAP-LI-SCb"/>
+                        <outlet property="segmentedFrederico" destination="506-TH-olZ" id="IZ5-4J-vwD"/>
+                        <outlet property="segmentedJeremias" destination="xSb-Y4-pTk" id="0wf-yZ-niS"/>
+                        <outlet property="segmentedSeverino" destination="wRs-46-29y" id="MRu-aP-x85"/>
+                        <outlet property="segmentedTeobaldo" destination="fGE-3O-Igw" id="TSk-pF-KOv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tfH-hf-k6Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1820" y="813.64317841079469"/>
+            <point key="canvasLocation" x="3712.8000000000002" y="834.33283358320841"/>
         </scene>
-        <!--Terceira-->
+        <!--Pessoa 2-->
         <scene sceneID="90s-3z-95Z">
             <objects>
-                <viewController id="vID-ng-xUL" customClass="TerceiraTelaViewController" customModule="SideBar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vID-ng-xUL" customClass="PrimeiraTelaViewController" customModule="SideBar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YF1-3C-Apg"/>
                         <viewControllerLayoutGuide type="bottom" id="pOb-bF-UhN"/>
@@ -174,18 +335,77 @@
                     <view key="view" contentMode="scaleToFill" id="igk-4G-oKV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Severino" translatesAutoresizingMaskIntoConstraints="NO" id="PR3-oI-eRF">
+                                <rect key="frame" x="16" y="72" width="343" height="333"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="lh7-kV-uJ9">
+                                <rect key="frame" x="16" y="425" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Não"/>
+                                    <segment title="Everaldo" enabled="NO"/>
+                                    <segment title="Sim"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedEveraldoAction:" destination="vID-ng-xUL" eventType="valueChanged" id="10E-j1-0RX"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Lp-aL-Jh2">
+                                <rect key="frame" x="16" y="472" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Não"/>
+                                    <segment title="Frederico" enabled="NO"/>
+                                    <segment title="Sim"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="NaL-y5-Jd0">
+                                <rect key="frame" x="16" y="516" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Não"/>
+                                    <segment title="Jeremias" enabled="NO"/>
+                                    <segment title="Sim"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="kgv-qm-7JI">
+                                <rect key="frame" x="16" y="563" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Não"/>
+                                    <segment title="Severino" enabled="NO"/>
+                                    <segment title="Sim"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="B3c-ei-nBX">
+                                <rect key="frame" x="16" y="608" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Não"/>
+                                    <segment title="Teobaldo" enabled="NO"/>
+                                    <segment title="Sim"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Terceira" id="0zO-3W-vXU">
+                    <navigationItem key="navigationItem" title="Pessoa 2" id="0zO-3W-vXU">
                         <barButtonItem key="leftBarButtonItem" systemItem="bookmarks" id="fAw-93-LVX"/>
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="fAw-93-LVX" id="nJR-5G-HRk"/>
+                        <outlet property="segmentedEveraldo" destination="lh7-kV-uJ9" id="Wyj-EG-upN"/>
+                        <outlet property="segmentedFrederico" destination="6Lp-aL-Jh2" id="gdQ-W3-NU5"/>
+                        <outlet property="segmentedJeremias" destination="NaL-y5-Jd0" id="v9L-67-Rqb"/>
+                        <outlet property="segmentedSeverino" destination="kgv-qm-7JI" id="AJG-UF-xpm"/>
+                        <outlet property="segmentedTeobaldo" destination="B3c-ei-nBX" id="NCR-Uv-Wuh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="smj-8Z-nRv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1836" y="1487.4062968515743"/>
+            <point key="canvasLocation" x="3714.4000000000001" y="1487.4062968515743"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JmX-yo-523">
@@ -203,7 +423,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rN1-bv-3It" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="872.79999999999995" y="122.78860569715144"/>
+            <point key="canvasLocation" x="2774" y="179"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="He4-2L-qaK">
@@ -221,7 +441,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bkZ-9X-AOs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="880.79999999999995" y="813.64317841079469"/>
+            <point key="canvasLocation" x="2775" y="834"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2h3-J7-hgb">
@@ -239,10 +459,301 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c8w-Dz-9aL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="896.79999999999995" y="1487.4062968515743"/>
+            <point key="canvasLocation" x="2775.1999999999998" y="1487.4062968515743"/>
+        </scene>
+        <!--Pessoa 3-->
+        <scene sceneID="s8O-x1-M0a">
+            <objects>
+                <viewController id="F2y-Go-7cE" customClass="PrimeiraTelaViewController" customModule="SideBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4aV-Ub-47v"/>
+                        <viewControllerLayoutGuide type="bottom" id="jbI-1c-jfP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vlR-rv-oNA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Everaldo" translatesAutoresizingMaskIntoConstraints="NO" id="2O8-JJ-PeS">
+                                <rect key="frame" x="16" y="72" width="343" height="333"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="Mhm-MM-nvK">
+                                <rect key="frame" x="16" y="425" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Não"/>
+                                    <segment title="Everaldo" enabled="NO"/>
+                                    <segment title="Sim"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="aJw-FL-jvO">
+                                <rect key="frame" x="16" y="472" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Não"/>
+                                    <segment title="Frederico" enabled="NO"/>
+                                    <segment title="Sim"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="BKU-wG-ZFy">
+                                <rect key="frame" x="16" y="516" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Não"/>
+                                    <segment title="Jeremias" enabled="NO"/>
+                                    <segment title="Sim"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="hXA-Vp-JQR">
+                                <rect key="frame" x="16" y="563" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Não"/>
+                                    <segment title="Severino" enabled="NO"/>
+                                    <segment title="Sim"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="h3Y-0S-3Eq">
+                                <rect key="frame" x="16" y="608" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Não"/>
+                                    <segment title="Teobaldo" enabled="NO"/>
+                                    <segment title="Sim"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pessoa 3" id="3Ag-4L-C0y">
+                        <barButtonItem key="leftBarButtonItem" systemItem="bookmarks" id="DdX-9r-oPr"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="DdX-9r-oPr" id="M4j-gV-WoB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hbg-e9-2ph" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-902" y="179"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="L0E-yR-W8C">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="haj-1P-eYj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BnD-X1-nw4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="F2y-Go-7cE" kind="relationship" relationship="rootViewController" id="9uD-QF-8P2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jpG-u4-eW7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1703" y="180"/>
+        </scene>
+        <!--Pessoa 4-->
+        <scene sceneID="hmi-Gm-OjS">
+            <objects>
+                <viewController id="Ptq-cy-5MM" customClass="PrimeiraTelaViewController" customModule="SideBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oEp-ga-UaI"/>
+                        <viewControllerLayoutGuide type="bottom" id="doL-cX-mQL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2gb-JX-niD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Jeremias" translatesAutoresizingMaskIntoConstraints="NO" id="yvy-2u-uwL">
+                                <rect key="frame" x="16" y="72" width="343" height="333"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="iJM-J0-ywM">
+                                <rect key="frame" x="16" y="425" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Não"/>
+                                    <segment title="Everaldo" enabled="NO"/>
+                                    <segment title="Sim"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="bmq-On-raS">
+                                <rect key="frame" x="16" y="472" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Não"/>
+                                    <segment title="Frederico" enabled="NO"/>
+                                    <segment title="Sim"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="ulY-5j-F8G">
+                                <rect key="frame" x="16" y="516" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Não"/>
+                                    <segment title="Jeremias" enabled="NO"/>
+                                    <segment title="Sim"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="Tp3-ZI-o9u">
+                                <rect key="frame" x="16" y="563" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Não"/>
+                                    <segment title="Severino" enabled="NO"/>
+                                    <segment title="Sim"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="enZ-71-o8W">
+                                <rect key="frame" x="16" y="608" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Não"/>
+                                    <segment title="Teobaldo" enabled="NO"/>
+                                    <segment title="Sim"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pessoa 4" id="Dv1-w2-Twy">
+                        <barButtonItem key="leftBarButtonItem" systemItem="bookmarks" id="V7n-uf-XGH"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="V7n-uf-XGH" id="adB-Fs-97a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cis-aa-dVa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-764" y="859.52023988005999"/>
+        </scene>
+        <!--Pessoa 5-->
+        <scene sceneID="sVW-7K-tbe">
+            <objects>
+                <viewController id="9wt-jO-jf6" customClass="PrimeiraTelaViewController" customModule="SideBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HKz-4f-oVn"/>
+                        <viewControllerLayoutGuide type="bottom" id="w1M-4m-etg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gtB-57-GKA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Frederico" translatesAutoresizingMaskIntoConstraints="NO" id="S3s-Ij-0Be">
+                                <rect key="frame" x="16" y="72" width="343" height="333"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ig2-Zh-3hp">
+                                <rect key="frame" x="16" y="425" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Não"/>
+                                    <segment title="Everaldo" enabled="NO"/>
+                                    <segment title="Sim"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="W3H-UJ-RQA">
+                                <rect key="frame" x="16" y="472" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Não"/>
+                                    <segment title="Frederico" enabled="NO"/>
+                                    <segment title="Sim"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="GpR-Zg-oGJ">
+                                <rect key="frame" x="16" y="516" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Não"/>
+                                    <segment title="Jeremias" enabled="NO"/>
+                                    <segment title="Sim"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="0vQ-MS-DTG">
+                                <rect key="frame" x="16" y="563" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Não"/>
+                                    <segment title="Severino" enabled="NO"/>
+                                    <segment title="Sim"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="bMd-hR-EAT">
+                                <rect key="frame" x="16" y="608" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Não"/>
+                                    <segment title="Teobaldo" enabled="NO"/>
+                                    <segment title="Sim"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pessoa 5" id="2ko-KR-aMU">
+                        <barButtonItem key="leftBarButtonItem" systemItem="bookmarks" id="scN-UM-tp5"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="scN-UM-tp5" id="SYo-9u-sNc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kGJ-Pl-Uez" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-808.79999999999995" y="1633.1334332833585"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aPb-MT-OVD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HkA-sx-Ofm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wuS-T1-Y2h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ptq-cy-5MM" kind="relationship" relationship="rootViewController" id="g7T-xH-QsC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dPI-sv-Yab" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1703.2" y="859.52023988005999"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="N5t-6m-Jum">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9OR-Mj-MRw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nms-oi-12A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9wt-jO-jf6" kind="relationship" relationship="rootViewController" id="b2L-lI-Rrs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Qq-mB-QvF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1748" y="1633.1334332833585"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1_Teobaldo_face" width="91" height="96"/>
+        <image name="2_Severino_face" width="88" height="75"/>
+        <image name="3_Everaldo_face" width="76" height="90"/>
+        <image name="4_Jeremias_face" width="89" height="97"/>
+        <image name="5_Frederico_face" width="81" height="76"/>
+        <image name="Everaldo" width="97" height="263"/>
+        <image name="Frederico" width="101" height="268"/>
+        <image name="Jeremias" width="101" height="294"/>
+        <image name="Severino" width="90" height="256"/>
+        <image name="Teobaldo" width="91" height="284"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gm2-kN-hNm"/>
+        <segue reference="iKB-Nu-lTY"/>
     </inferredMetricsTieBreakers>
 </document>
