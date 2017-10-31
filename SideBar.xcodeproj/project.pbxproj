@@ -16,6 +16,7 @@
 		8636512D1F9AC0A60021260F /* PrimeiraTelaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8636512C1F9AC0A60021260F /* PrimeiraTelaViewController.swift */; };
 		866FB4EB1FA3E1050063FEF1 /* DicasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866FB4EA1FA3E1050063FEF1 /* DicasViewController.swift */; };
 		866FB4F11FA3EBAA0063FEF1 /* Selections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866FB4F01FA3EBAA0063FEF1 /* Selections.swift */; };
+		9A3649141FA7F94700931C14 /* ResultadoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3649131FA7F94700931C14 /* ResultadoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		8636512C1F9AC0A60021260F /* PrimeiraTelaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeiraTelaViewController.swift; sourceTree = "<group>"; };
 		866FB4EA1FA3E1050063FEF1 /* DicasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DicasViewController.swift; sourceTree = "<group>"; };
 		866FB4F01FA3EBAA0063FEF1 /* Selections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Selections.swift; sourceTree = "<group>"; };
+		9A3649131FA7F94700931C14 /* ResultadoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultadoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				866FB4EA1FA3E1050063FEF1 /* DicasViewController.swift */,
 				8636512C1F9AC0A60021260F /* PrimeiraTelaViewController.swift */,
 				866FB4F01FA3EBAA0063FEF1 /* Selections.swift */,
+				9A3649131FA7F94700931C14 /* ResultadoViewController.swift */,
 			);
 			path = SideBar;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			files = (
 				863651181F9ABD0F0021260F /* ViewController.swift in Sources */,
 				863651161F9ABD0F0021260F /* AppDelegate.swift in Sources */,
+				9A3649141FA7F94700931C14 /* ResultadoViewController.swift in Sources */,
 				866FB4F11FA3EBAA0063FEF1 /* Selections.swift in Sources */,
 				866FB4EB1FA3E1050063FEF1 /* DicasViewController.swift in Sources */,
 				8636512D1F9AC0A60021260F /* PrimeiraTelaViewController.swift in Sources */,

@@ -17,7 +17,29 @@ class PrimeiraTelaViewController: UIViewController {
     @IBOutlet weak var segmentedSeverino: UISegmentedControl!
     @IBOutlet weak var segmentedTeobaldo: UISegmentedControl!
     
-    var arrayPrimeiraPessoa: [Int] = [0,1,0,2,0]
+    @IBOutlet weak var titleLabel: UINavigationItem!
+    
+    func updateSegmentedControlView(chave: String){
+        if let data = UserDefaults.standard.data(forKey: "selections"),
+            let selections = NSKeyedUnarchiver.unarchiveObject(with: data) as? [Selections] {
+            selections.forEach { pessoa in
+                switch(pessoa.name){
+                case chave + "0":
+                    segmentedEveraldo.selectedSegmentIndex = pessoa.value
+                case chave + "1":
+                    segmentedFrederico.selectedSegmentIndex = pessoa.value
+                case chave + "2":
+                    segmentedSeverino.selectedSegmentIndex = pessoa.value
+                case chave + "3":
+                    segmentedJeremias.selectedSegmentIndex = pessoa.value
+                case chave + "4":
+                    segmentedTeobaldo.selectedSegmentIndex = pessoa.value
+                default:
+                    print("")
+                }
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,17 +50,66 @@ class PrimeiraTelaViewController: UIViewController {
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
-        if let data = UserDefaults.standard.data(forKey: "selections"),
-            let selections = NSKeyedUnarchiver.unarchiveObject(with: data) as? [Selections] {
-            selections.forEach({print( $0.name, $0.value)})
-        } else {
-            print("There is an issue")
+        switch titleLabel.title! {
+        case "Pessoa 1":
+            updateSegmentedControlView(chave: "primeiro")
+        case "Pessoa 2":
+            updateSegmentedControlView(chave: "segundo")
+        case "Pessoa 3":
+            updateSegmentedControlView(chave: "terceiro")
+        case "Pessoa 4":
+            updateSegmentedControlView(chave: "quarto")
+        case "Pessoa 5":
+            updateSegmentedControlView(chave: "quinto")
+        default:
+            print("")
+        }
+    }
+    
+    func updateSegmentedControlArchived(indice: String, segmentedIndex: Int){
+        var chave: String
+        switch titleLabel.title! {
+        case "Pessoa 1":
+            chave = "primeiro" + indice
+        case "Pessoa 2":
+            chave = "segundo" + indice
+        case "Pessoa 3":
+            chave = "terceiro" + indice
+        case "Pessoa 4":
+            chave = "quarto" + indice
+        case "Pessoa 5":
+            chave = "quinto" + indice
+        default:
+            chave = " " + indice
         }
         
+        if let data = UserDefaults.standard.data(forKey: "selections"),
+            var selections = NSKeyedUnarchiver.unarchiveObject(with: data) as? [Selections] {
+            selections.append(Selections(name: chave, value: segmentedIndex))
+            let encodedData = NSKeyedArchiver.archivedData(withRootObject: selections)
+            UserDefaults.standard.set(encodedData, forKey: "selections")
+        }
     }
 
     @IBAction func segmentedEveraldoAction(_ sender: UISegmentedControl) {
-        arrayPrimeiraPessoa[0] = segmentedEveraldo.selectedSegmentIndex
+        updateSegmentedControlArchived(indice: "0", segmentedIndex: segmentedEveraldo.selectedSegmentIndex)
+    }
+    
+    @IBAction func segmentedFredericoAction(_ sender: UISegmentedControl) {
+        updateSegmentedControlArchived(indice: "1", segmentedIndex: segmentedFrederico.selectedSegmentIndex)
+    }
+    
+    @IBAction func segmentedJeremiasAction(_ sender: UISegmentedControl) {
+        updateSegmentedControlArchived(indice: "2", segmentedIndex: segmentedJeremias.selectedSegmentIndex)
+    }
+    
+    @IBAction func segmentedSeverinoAction(_ sender: UISegmentedControl) {
+        updateSegmentedControlArchived(indice: "3", segmentedIndex: segmentedSeverino.selectedSegmentIndex)
+    }
+    
+    @IBAction func segmentedTeobaldoAction(_ sender: UISegmentedControl) {
+        updateSegmentedControlArchived(indice: "4", segmentedIndex: segmentedTeobaldo.selectedSegmentIndex)
+        
     }
     
     override func didReceiveMemoryWarning() {
