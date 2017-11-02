@@ -320,7 +320,7 @@ Teobaldo está de bermuda
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Não"/>
-                                    <segment title="Everaldo" enabled="NO"/>
+                                    <segment title="Everaldo"/>
                                     <segment title="Sim"/>
                                 </segments>
                                 <connections>
@@ -332,7 +332,7 @@ Teobaldo está de bermuda
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Não"/>
-                                    <segment title="Frederico" enabled="NO"/>
+                                    <segment title="Frederico"/>
                                     <segment title="Sim"/>
                                 </segments>
                                 <connections>
@@ -344,7 +344,7 @@ Teobaldo está de bermuda
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Não"/>
-                                    <segment title="Jeremias" enabled="NO"/>
+                                    <segment title="Jeremias"/>
                                     <segment title="Sim"/>
                                 </segments>
                                 <connections>
@@ -356,7 +356,7 @@ Teobaldo está de bermuda
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Não"/>
-                                    <segment title="Severino" enabled="NO"/>
+                                    <segment title="Severino"/>
                                     <segment title="Sim"/>
                                 </segments>
                                 <connections>
@@ -368,7 +368,7 @@ Teobaldo está de bermuda
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Não"/>
-                                    <segment title="Teobaldo" enabled="NO"/>
+                                    <segment title="Teobaldo"/>
                                     <segment title="Sim"/>
                                 </segments>
                                 <connections>
@@ -416,7 +416,7 @@ Teobaldo está de bermuda
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Não"/>
-                                    <segment title="Everaldo" enabled="NO"/>
+                                    <segment title="Everaldo"/>
                                     <segment title="Sim"/>
                                 </segments>
                                 <connections>
@@ -428,7 +428,7 @@ Teobaldo está de bermuda
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Não"/>
-                                    <segment title="Frederico" enabled="NO"/>
+                                    <segment title="Frederico"/>
                                     <segment title="Sim"/>
                                 </segments>
                                 <connections>
@@ -440,7 +440,7 @@ Teobaldo está de bermuda
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Não"/>
-                                    <segment title="Jeremias" enabled="NO"/>
+                                    <segment title="Jeremias"/>
                                     <segment title="Sim"/>
                                 </segments>
                                 <connections>
@@ -452,7 +452,7 @@ Teobaldo está de bermuda
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Não"/>
-                                    <segment title="Severino" enabled="NO"/>
+                                    <segment title="Severino"/>
                                     <segment title="Sim"/>
                                 </segments>
                                 <connections>
@@ -464,7 +464,7 @@ Teobaldo está de bermuda
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Não"/>
-                                    <segment title="Teobaldo" enabled="NO"/>
+                                    <segment title="Teobaldo"/>
                                     <segment title="Sim"/>
                                 </segments>
                                 <connections>
@@ -564,11 +564,13 @@ Teobaldo está de bermuda
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="Mhm-MM-nvK">
                                 <rect key="frame" x="16" y="425" width="343" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <segments>
                                     <segment title="Não"/>
-                                    <segment title="Everaldo" enabled="NO"/>
+                                    <segment title="Everaldo"/>
                                     <segment title="Sim"/>
                                 </segments>
+                                <color key="tintColor" red="1" green="0.50178332584995089" blue="0.30220419333888215" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="segmentedEveraldoAction:" destination="F2y-Go-7cE" eventType="valueChanged" id="kqc-qd-dOn"/>
                                 </connections>
@@ -578,7 +580,7 @@ Teobaldo está de bermuda
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Não"/>
-                                    <segment title="Frederico" enabled="NO"/>
+                                    <segment title="Frederico"/>
                                     <segment title="Sim"/>
                                 </segments>
                                 <connections>
@@ -590,7 +592,7 @@ Teobaldo está de bermuda
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Não"/>
-                                    <segment title="Jeremias" enabled="NO"/>
+                                    <segment title="Jeremias"/>
                                     <segment title="Sim"/>
                                 </segments>
                                 <connections>
@@ -602,7 +604,7 @@ Teobaldo está de bermuda
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Não"/>
-                                    <segment title="Severino" enabled="NO"/>
+                                    <segment title="Severino"/>
                                     <segment title="Sim"/>
                                 </segments>
                                 <connections>
@@ -614,7 +616,7 @@ Teobaldo está de bermuda
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Não"/>
-                                    <segment title="Teobaldo" enabled="NO"/>
+                                    <segment title="Teobaldo"/>
                                     <segment title="Sim"/>
                                 </segments>
                                 <connections>
@@ -680,7 +682,7 @@ Teobaldo está de bermuda
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Não"/>
-                                    <segment title="Everaldo" enabled="NO"/>
+                                    <segment title="Everaldo"/>
                                     <segment title="Sim"/>
                                 </segments>
                                 <connections>
@@ -692,7 +694,7 @@ Teobaldo está de bermuda
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Não"/>
-                                    <segment title="Frederico" enabled="NO"/>
+                                    <segment title="Frederico"/>
                                     <segment title="Sim"/>
                                 </segments>
                                 <connections>
@@ -704,7 +706,7 @@ Teobaldo está de bermuda
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Não"/>
-                                    <segment title="Jeremias" enabled="NO"/>
+                                    <segment title="Jeremias"/>
                                     <segment title="Sim"/>
                                 </segments>
                                 <connections>
@@ -716,7 +718,7 @@ Teobaldo está de bermuda
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Não"/>
-                                    <segment title="Severino" enabled="NO"/>
+                                    <segment title="Severino"/>
                                     <segment title="Sim"/>
                                 </segments>
                                 <connections>
@@ -728,7 +730,7 @@ Teobaldo está de bermuda
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Não"/>
-                                    <segment title="Teobaldo" enabled="NO"/>
+                                    <segment title="Teobaldo"/>
                                     <segment title="Sim"/>
                                 </segments>
                                 <connections>
@@ -776,7 +778,7 @@ Teobaldo está de bermuda
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Não"/>
-                                    <segment title="Everaldo" enabled="NO"/>
+                                    <segment title="Everaldo"/>
                                     <segment title="Sim"/>
                                 </segments>
                                 <connections>
@@ -788,7 +790,7 @@ Teobaldo está de bermuda
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Não"/>
-                                    <segment title="Frederico" enabled="NO"/>
+                                    <segment title="Frederico"/>
                                     <segment title="Sim"/>
                                 </segments>
                                 <connections>
@@ -800,7 +802,7 @@ Teobaldo está de bermuda
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Não"/>
-                                    <segment title="Jeremias" enabled="NO"/>
+                                    <segment title="Jeremias"/>
                                     <segment title="Sim"/>
                                 </segments>
                                 <connections>
@@ -812,7 +814,7 @@ Teobaldo está de bermuda
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Não"/>
-                                    <segment title="Severino" enabled="NO"/>
+                                    <segment title="Severino"/>
                                     <segment title="Sim"/>
                                 </segments>
                                 <connections>
@@ -824,7 +826,7 @@ Teobaldo está de bermuda
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Não"/>
-                                    <segment title="Teobaldo" enabled="NO"/>
+                                    <segment title="Teobaldo"/>
                                     <segment title="Sim"/>
                                 </segments>
                                 <connections>
