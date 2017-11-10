@@ -88,11 +88,8 @@ class DicasViewController: UIViewController {
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
-        if let data = UserDefaults.standard.data(forKey: "selections"),
-            let selections = NSKeyedUnarchiver.unarchiveObject(with: data) as? [Selections] {
-            if selections.count == 0 {
-                loadData()
-            }
+        if (UserDefaults.standard.data(forKey: "selections") == nil) {
+            loadData()
         }
     }
 

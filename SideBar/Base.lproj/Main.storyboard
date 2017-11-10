@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -92,7 +92,7 @@ Teobaldo está de bermuda
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hNC-9I-L82" id="FhC-7o-xWM">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dicas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFn-S5-71p">
@@ -116,21 +116,21 @@ Teobaldo está de bermuda
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pDi-no-GNL">
-                                                    <rect key="frame" x="114" y="24" width="4.5" height="20.5"/>
+                                                    <rect key="frame" x="113" y="27" width="4.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="odD-bd-3D1">
-                                                    <rect key="frame" x="114" y="47.5" width="3.5" height="14.5"/>
+                                                    <rect key="frame" x="113" y="47.5" width="3.5" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="1_Teobaldo_face" id="Sei-v0-Cuv">
-                                                    <rect key="frame" x="16" y="0.0" width="83" height="87.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="83" height="87.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -147,14 +147,14 @@ Teobaldo está de bermuda
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0Ti-9J-lFb">
-                                                    <rect key="frame" x="119" y="0.0" width="241" height="89.5"/>
+                                                    <rect key="frame" x="118" y="0.0" width="242" height="89.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="2_Severino_face" id="air-ou-dcL">
-                                                    <rect key="frame" x="16" y="7" width="88" height="75"/>
+                                                    <rect key="frame" x="15" y="7" width="88" height="75"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -171,14 +171,14 @@ Teobaldo está de bermuda
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dWN-gZ-tHi">
-                                                    <rect key="frame" x="104" y="0.0" width="256" height="86.5"/>
+                                                    <rect key="frame" x="103" y="0.0" width="257" height="86.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="3_Everaldo_face" id="uNG-Hc-2lx">
-                                                    <rect key="frame" x="16" y="0.0" width="73" height="86.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="73" height="86.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -195,14 +195,14 @@ Teobaldo está de bermuda
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AVZ-VB-twJ">
-                                                    <rect key="frame" x="109" y="0.0" width="251" height="85.5"/>
+                                                    <rect key="frame" x="108" y="0.0" width="252" height="85.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="4_Jeremias_face" id="70F-I6-aj5">
-                                                    <rect key="frame" x="16" y="0.0" width="78" height="85.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="78" height="85.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -219,14 +219,14 @@ Teobaldo está de bermuda
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f0U-TA-liO">
-                                                    <rect key="frame" x="112" y="0.0" width="248" height="91.5"/>
+                                                    <rect key="frame" x="111" y="0.0" width="249" height="91.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="5_Frederico_face" id="EZA-4g-bMB">
-                                                    <rect key="frame" x="16" y="7" width="81" height="76"/>
+                                                    <rect key="frame" x="15" y="7" width="81" height="76"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -242,8 +242,8 @@ Teobaldo está de bermuda
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="91.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Resultado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="H8A-r5-hGm">
-                                                    <rect key="frame" x="16" y="0.0" width="344" height="91.5"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Resultado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="H8A-r5-hGm">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="91.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                                     <nil key="textColor"/>
@@ -570,7 +570,6 @@ Teobaldo está de bermuda
                                     <segment title="Everaldo"/>
                                     <segment title="Sim"/>
                                 </segments>
-                                <color key="tintColor" red="1" green="0.50178332584995089" blue="0.30220419333888215" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="segmentedEveraldoAction:" destination="F2y-Go-7cE" eventType="valueChanged" id="kqc-qd-dOn"/>
                                 </connections>
@@ -894,7 +893,7 @@ Teobaldo está de bermuda
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rHi-Tu-zIh" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Izz-n5-b08">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Izz-n5-b08">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

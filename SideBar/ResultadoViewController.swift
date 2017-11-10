@@ -47,8 +47,10 @@ class ResultadoViewController: UIViewController {
                 
                 if (incorrects != "") {
                     print("Estão incorretas as seguintes pessoas... " + incorrects)
+                    imageViewResultado.image = UIImage(named: "joia_nok")
                 } else {
                     print("Parabéns fiadamãe!!!")
+                    imageViewResultado.image = UIImage(named: "joia_ok")
                 }
             }
         }
