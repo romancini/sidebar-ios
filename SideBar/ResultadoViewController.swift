@@ -65,23 +65,23 @@ class ResultadoViewController: UIViewController {
         var result4: Bool = false
         valores.forEach{ pessoa in
             //Teobaldo é a primeira pessoa
-            if (pessoa.name == "primeiro0" && pessoa.value == 2) {
+            if (pessoa.name == "primeiro4" && pessoa.value == 2) {
                 result2 = true
             }
             
-            if (pessoa.name == "segundo0" && pessoa.value != 2) {
+            if (pessoa.name == "segundo4" && pessoa.value != 2) {
                 result0 = true
             }
             
-            if (pessoa.name == "terceiro0" && pessoa.value != 2) {
+            if (pessoa.name == "terceiro4" && pessoa.value != 2) {
                 result1 = true
             }
             
-            if (pessoa.name == "quarto0" && pessoa.value != 2) {
+            if (pessoa.name == "quarto4" && pessoa.value != 2) {
                 result3 = true
             }
             
-            if (pessoa.name == "quinto0" && pessoa.value != 2) {
+            if (pessoa.name == "quinto4" && pessoa.value != 2) {
                 result4 = true
             }
         }
@@ -101,23 +101,23 @@ class ResultadoViewController: UIViewController {
         var result4: Bool = false
         valores.forEach{ pessoa in
             //Severino é a segunda pessoa
-            if (pessoa.name == "segundo0" && pessoa.value == 2) {
+            if (pessoa.name == "segundo3" && pessoa.value == 2) {
                 result2 = true
             }
             
-            if (pessoa.name == "primeiro0" && pessoa.value != 2) {
+            if (pessoa.name == "primeiro3" && pessoa.value != 2) {
                 result0 = true
             }
             
-            if (pessoa.name == "terceiro0" && pessoa.value != 2) {
+            if (pessoa.name == "terceiro3" && pessoa.value != 2) {
                 result1 = true
             }
             
-            if (pessoa.name == "quarto0" && pessoa.value != 2) {
+            if (pessoa.name == "quarto3" && pessoa.value != 2) {
                 result3 = true
             }
             
-            if (pessoa.name == "quinto0" && pessoa.value != 2) {
+            if (pessoa.name == "quinto3" && pessoa.value != 2) {
                 result4 = true
             }
         }
@@ -173,23 +173,23 @@ class ResultadoViewController: UIViewController {
         var result4: Bool = false
         valores.forEach{ pessoa in
             //Jeremias é a quarta pessoa
-            if (pessoa.name == "quarto0" && pessoa.value == 2) {
+            if (pessoa.name == "quarto2" && pessoa.value == 2) {
                 result2 = true
             }
             
-            if (pessoa.name == "primeiro0" && pessoa.value != 2) {
+            if (pessoa.name == "primeiro2" && pessoa.value != 2) {
                 result0 = true
             }
             
-            if (pessoa.name == "segundo0" && pessoa.value != 2) {
+            if (pessoa.name == "segundo2" && pessoa.value != 2) {
                 result1 = true
             }
             
-            if (pessoa.name == "terceiro0" && pessoa.value != 2) {
+            if (pessoa.name == "terceiro2" && pessoa.value != 2) {
                 result3 = true
             }
             
-            if (pessoa.name == "quinto0" && pessoa.value != 2) {
+            if (pessoa.name == "quinto2" && pessoa.value != 2) {
                 result4 = true
             }
         }
@@ -209,23 +209,23 @@ class ResultadoViewController: UIViewController {
         var result4: Bool = false
         valores.forEach{ pessoa in
             //Fred é a quinta pessoa
-            if (pessoa.name == "quinto0" && pessoa.value == 2) {
+            if (pessoa.name == "quinto1" && pessoa.value == 2) {
                 result2 = true
             }
             
-            if (pessoa.name == "primeiro0" && pessoa.value != 2) {
+            if (pessoa.name == "primeiro1" && pessoa.value != 2) {
                 result0 = true
             }
             
-            if (pessoa.name == "segundo0" && pessoa.value != 2) {
+            if (pessoa.name == "segundo1" && pessoa.value != 2) {
                 result1 = true
             }
             
-            if (pessoa.name == "terceiro0" && pessoa.value != 2) {
+            if (pessoa.name == "terceiro1" && pessoa.value != 2) {
                 result3 = true
             }
             
-            if (pessoa.name == "quarto0" && pessoa.value != 2) {
+            if (pessoa.name == "quarto1" && pessoa.value != 2) {
                 result4 = true
             }
         }
